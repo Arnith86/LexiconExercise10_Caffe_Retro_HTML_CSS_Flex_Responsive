@@ -26,4 +26,5 @@ section#cozy {
 .page {
   height: 100vh;
   background-size: cover;
+  background-position: center;
 }
