@@ -3,37 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CaffeRetro.css" />
     <title>Cafe Retro</title>
   </head>
   <body>
     <main>
       <header>
         <nav>
-          <a href="#">Hot</a>
-          <a href="#">Juicy</a>
-          <a href="#">Cozy</a>
+          <a href="#hot">Hot</a>
+          <a href="#juicy">Juicy</a>
+          <a href="#cozy">Cozy</a>
         </nav>
       </header>
-      <section>
+      <section id="hot">
         <h1>Hot</h1>
-        <section class="suggestion"></section>
-        <figure>
+        <section class="suggestion">
+          <p>
+            <span class="mobile-line"
+              >Hot freshly ground black coffee or a cup of exquisite tea?</span
+            >
+            <span class="desktop-line"
+              >We give you that perfect cup every time.</span
+            >
+          </p>
+        </section>
+        <section class="menu">
+          <div class="menu-option">
+            <span>Mocha Latte</span>
+            <span> € 7.50</span>
+          </div>
+          <div class="menu-option">
+            <span>Caffe Formaggio</span>
+            <span>€ 5.00</span>
+          </div>
+          <div class="menu-option">
+            <span>Espresso</span>
+            <span>€ 3.50</span>
+          </div>
+          <div class="menu-option">
+            <span>Chai Verde Latte</span>
+            <span>€ 5.50</span>
+          </div>
+        </section>
+        <figure class="background-image">
           <img
             src="./Assets/hot.jpg"
             alt="An image of a cafe, with most of the customers are sitting on high chairs enjoying their time."
           />
         </figure>
       </section>
-      <section>
-        <figure>
+      <section id="juicy">
+        <h1>Juicy</h1>
+        <section class="suggestion">
+          <p>
+            <span class="mobile-line">Ripe fruit - freshly squeezed.</span>
+            <span class="desktop-line"
+              >It's as simple as that. Chunky or smooth - it's your
+              choice.</span
+            >
+          </p>
+        </section>
+        <section class="menu">
+          <ul>
+            <li>Branched Apricots € 4.20</li>
+            <li>Deep Rasberries € 3.50</li>
+            <li>Smooth Oranges € 6.50</li>
+          </ul>
+        </section>
+        <figure class="background-image">
           <img
             src="./Assets/juicy.jpg"
-            alt="A woman selecting an item from a vending machine, ladled 'FRUIT'."
+            alt="A woman selecting an juice from a vending machine, ladled 'FRUIT'."
           />
         </figure>
       </section>
-      <section>
-        <figure>
+      <section id="cozy">
+        <figure class="background-image">
           <img
             src="./Assets/cosy.jpg"
             alt="An image of a cafe, with armchairs and low tables most customers are standing and enjoying their time."
