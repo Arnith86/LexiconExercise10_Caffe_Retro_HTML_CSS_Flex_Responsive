@@ -22,6 +22,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 
 .nav-bar a {
@@ -117,7 +118,7 @@ p.desktop-line {
   }
 
   .suggestion .mobile-line {
-    left: -4.5rem;/
+    left: -4.5rem;
   }
 
   .suggestion .desktop-line {
@@ -146,3 +147,29 @@ p.desktop-line {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .nav-bar {
+    height: 5rem;
+    gap: 6rem;
+  }
+
+  .nav-bar a {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .menu,
+  .suggestion {
+    width: 65%;
+    max-width: 720px;
+  }
+
+  .suggestion .mobile-line,
+  .suggestion .desktop-line,
+  .menu {
+    font-size: 1.4rem;
+  }
+}
