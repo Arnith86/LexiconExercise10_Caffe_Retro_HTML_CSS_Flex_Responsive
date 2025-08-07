@@ -98,11 +98,51 @@ section#cozy {
 p.desktop-line {
   display: none;
 }
-/* .mobile-line {
-  display: block;
-} */
 
-/* p.desktop-line,
-p.mobile-line {
-  background-color: darkred;
-} */
+.mobile-line {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    gap: 4rem;
+  }
+
+  .nav-bar a {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .suggestion .mobile-line {
+    left: -4.5rem;/
+  }
+
+  .suggestion .desktop-line {
+    left: 4.5rem;
+  }
+
+  .suggestion .mobile-line,
+  .suggestion .desktop-line {
+    position: relative;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .menu,
+  .suggestion {
+    width: 55%;
+    max-width: 640px;
+  }
+
+  .menu {
+    padding: 1rem 2.7rem;
+  }
+
+  p.desktop-line {
+    display: block;
+  }
+}
+
