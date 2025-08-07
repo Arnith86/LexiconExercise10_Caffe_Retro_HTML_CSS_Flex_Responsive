@@ -23,7 +23,15 @@ main {
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
-  font-family: "Spirax", sans-serif;
+}
+
+h1 {
+  color: darkred;
+}
+
+h1,
+.nav-bar a {
+  font-family: "spirax", sans-serif;
 }
 
 body {
