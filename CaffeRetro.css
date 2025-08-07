@@ -1,11 +1,16 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+}
+
+body {
+  background-color: darkred;
 }
 
 .nav-bar {
@@ -25,42 +30,6 @@ main {
   text-decoration: none;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poiret One", sans-serif;
-  color: rgba(255, 255, 255, 0.801);
-  gap: 1rem;
-}
-
-.suggestion {
-  max-width: 70%;
-  gap: 1rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.suggestion p {
-  background-color: rgba(139, 0, 0, 0.719);
-  padding: 0.4rem 0.2rem;
-}
-/* .suggestion p {
-  max-width: 90%;
-  text-align: center;
-   padding: 1rem 1rem; 
-} */
-
-/* .suggestion {
-  
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 h1 {
   color: darkred;
   font-size: 3rem;
@@ -71,8 +40,40 @@ h1,
   font-family: "spirax", sans-serif;
 }
 
-body {
-  background-color: darkred;
+.page {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poiret One", sans-serif;
+  color: rgba(255, 255, 255, 0.877);
+  gap: 1rem;
+}
+
+.suggestion {
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.suggestion p {
+  background-color: rgba(139, 0, 0, 0.719);
+  padding: 0.7rem 0.3rem;
+}
+
+.suggestion,
+.menu {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.637);
+  padding: 0.8rem;
 }
 
 .menu-option {
@@ -92,14 +93,8 @@ section#cozy {
   background-image: url("./Assets/cosy.jpg");
 }
 
-.page {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-
 p.desktop-line {
-  /* display: none; */
+  display: none;
 }
 /* .mobile-line {
   display: block;
